@@ -6,7 +6,7 @@ module Rlastfm
 
     base_uri "http://ws.audioscrobbler.com/2.0/"
 
-    remote_reader :name, :mbid, :stats, :url, :bio
+    remote_reader :name, :mbid, :stats, :url, :bio, :tags
     remote_reader :from => :image, :to => :images
 
     def self.top_twenty
